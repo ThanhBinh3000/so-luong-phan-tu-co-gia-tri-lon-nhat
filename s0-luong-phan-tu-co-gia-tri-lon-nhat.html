@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số lượng phần tử có giá trị lớn nhất</title>
+</head>
+<body>
+<script>
+    let arr=[1,1,7,6,2,7];//khai báo mảng
+    let max=arr[0];//co nghĩa là max bằng phần tử 0 trong bảng tương đương với max=1
+    let count=0; // khai báo biến count ( tiếng việt cí nghĩa là đếm)
+    for (let i=0;i<arr.length;i++){
+        if (arr[i]>max){
+            max=arr[i];
+        }
+    }
+    for (let i=0;i< arr.length; i++){
+        if (arr[i]===max){
+            count++
+        }
+    }
+    alert('giá trị lớn nhất là'+max+'và có số phần tử đạt max là'+count);
+</script>
+</body>
+</html>
